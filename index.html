@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>OpenBoard</title>
+</head>
+<body>
+    <div class="option-icon">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="tool-options-icons-container scale-tools">
+        
+            <img class ="pencil" src ="images/Pencil.svg">
+            <img class ="eraser" src ="images/Eraser.svg">
+            <img class="sticky" src ="images/StickyNote.svg">
+            <img class="download" src="images/Download.svg">
+            <img class="upload" src ="images/Upload.svg">
+            <img class="undo" src ="images/Undo.svg">
+            <img class="redo" src ="images/Redo.svg">
+       
+    </div>
+    <div class="tool-pencil">
+        <div class="pencil-width-container">
+            <input type="range" min="2" max="10" value="3">
+        </div>
+        <div class="pencil-color-container">
+            <div class="pencil-color-blue"></div>
+            <div class="pencil-color-red"></div>
+            <div class="pencil-color-green"></div>
+
+        </div>
+
+    </div>
+    <div class="tool-eraser">
+        <div class="eraser-width-container">
+            <input type="range" min="2" max="10" value="3">
+        </div>
+    </div>
+    <!-- <div class="tool-sticky">
+        <div class="sticky-header">
+            <div class="sticky-minimize"></div>
+            <div class="sticky-close"></div>
+        </div>
+        <div class="sticky-body">
+            <textarea></textarea>
+        </div>
+    </div> -->
+    <canvas></canvas>
+    <div class="tool-download"></div>
+    <div class="tool-upload"></div>
+    <div class="tool-undo"></div>
+    <div class="tool-redo"></div>
+   <script src="./tool.js"></script>
+   <script src="./canvasScript.js"></script>
+</body>
+</html>
