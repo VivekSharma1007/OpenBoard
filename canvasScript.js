@@ -5,7 +5,7 @@ canvas.width = window.innerWidth;
 let tool = canvas.getContext("2d");
 
 tool.strokeStyle ="blue";
-tool.lineWidth="5";
+tool.lineWidth="8";
 
 tool.beginPath(); // new graphic path line
 tool.moveTo(10, 10); // start point

@@ -113,6 +113,7 @@ function stickyBody(minimize, close, tool,idNo)
 {
     close.addEventListener("click" , (e) => {
        tool.remove();
+       
     })
 
     minimize.addEventListener("click", (e) => {
