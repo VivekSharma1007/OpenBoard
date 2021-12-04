@@ -130,7 +130,7 @@ img{
 
 
 
-.tool-sticky{
+.sticky-cont{
     height: 15rem;
     width: 15rem;
     position: absolute;
@@ -140,7 +140,7 @@ img{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
-.sticky-header{
+.header-cont{
     height: 2rem;
     background-color: #f1f2f6; 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -151,13 +151,13 @@ img{
     
 }
 
-.sticky-minimize{
+.minimize-note{
     background-color: green;
     height: 1rem;
     width:1rem;
     border-radius: 30%;
 }
-.sticky-close{
+.remove-note{
     background-color: red;
     height: 1rem;
     width: 1rem;
@@ -165,7 +165,7 @@ img{
     border-radius: 30%
 }
 
-.sticky-body{
+.note-cont{
 
     height: 100%;
     width: 100%;
@@ -181,7 +181,7 @@ textarea{
     resize: none;
 }
 
-.sticky-body > img{
+.note-cont > img{
     height: 13rem;
     width: 13rem;
 }
