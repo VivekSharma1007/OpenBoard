@@ -14,6 +14,10 @@ let stickyFlag = true;
 
 
 // from canvas.js
+let canvas = document.querySelector("canvas");
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
+let mouseDown = false;
 
 let pencilColor = document.querySelectorAll(".pencil-color");
 let pencilWidthElem = document.querySelector(".pencil-width");
@@ -23,6 +27,11 @@ let penColor = "blue";
 let eraserColor = "white";
 let penWidth = pencilWidthElem.value;
 let eraserWidth = eraserWidthElem.value;
+let tool = canvas.getContext("2d");
+
+tool.strokeStyle =penColor;
+tool.lineWidth= penWidth;
+
 
 optionContainer.addEventListener("click", (e) => {
     optionFlag = !optionFlag;
