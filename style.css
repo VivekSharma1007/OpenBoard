@@ -93,19 +93,19 @@ img{
     
     
 }
-.pencil-color-blue{
+.blue{
     background-color: blue;
     height: 1rem;
     width:1rem;
     border-radius: 50%;
 }
-.pencil-color-red{
+.red{
     background-color: red;
     height: 1rem;
     width:1rem;
     border-radius: 50%;
 }
-.pencil-color-green{
+.green{
     background-color: green;
     height: 1rem;
     width:1rem;

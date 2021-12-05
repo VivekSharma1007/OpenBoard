@@ -128,7 +128,7 @@ upload.addEventListener("click", (e) => {
         stickyNoteElem.setAttribute("class", "sticky-cont");
         stickyNoteElem.innerHTML = `
         <div class="header-cont">
-            <div class="toggle-note"></div>
+            <div class="minimize-note"></div>
             <div class="remove-note"></div>
         </div>
         <div class="note-cont">
@@ -136,7 +136,7 @@ upload.addEventListener("click", (e) => {
         </div>
         `;
 
-        let toggleNote = stickyNoteElem.querySelector(".toggle-note");
+        let toggleNote = stickyNoteElem.querySelector(".minimize-note");
         let removeNote = stickyNoteElem.querySelector(".remove-note");
         handleStickyActions(toggleNote, removeNote, stickyNoteElem);
 
