@@ -11,7 +11,7 @@ const app = express(); // initialize application and server ready
 
 app.use(express.static("public"));
 
-let port = 3000; // to and for motion 8080 5000
+let port = process.env.PORT || 3000; // to and for motion 8080 5000
 let server = app.listen(port, () => {
     console.log("Listening to port" + port)
 })

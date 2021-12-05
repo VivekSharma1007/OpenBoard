@@ -2,9 +2,6 @@
 
 // moved to tool.js
 
-
-
-
 // let pencilColor = document.querySelectorAll(".pencil-color");
 // let pencilWidthElem = document.querySelector(".pencil-width");
 // let eraserWidthElem = document.querySelector(".eraser-width");
