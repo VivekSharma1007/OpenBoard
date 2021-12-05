@@ -2,14 +2,18 @@ let canvas = document.querySelector("canvas");
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 let mouseDown = false;
-let pencilColor = document.querySelectorAll(".pencil-color");
-let pencilWidthElem = document.querySelector(".pencil-width");
-let eraserWidthElem = document.querySelector(".eraser-width");
 
-let penColor = "blue";
-let eraserColor = "white";
-let penWidth = pencilWidthElem.value;
-let eraserWidth = eraserWidthElem.value;
+// moved to tool.js
+
+
+// let pencilColor = document.querySelectorAll(".pencil-color");
+// let pencilWidthElem = document.querySelector(".pencil-width");
+// let eraserWidthElem = document.querySelector(".eraser-width");
+
+// let penColor = "blue";
+// let eraserColor = "white";
+// let penWidth = pencilWidthElem.value;
+// let eraserWidth = eraserWidthElem.value;
 
 let tool = canvas.getContext("2d");
 
@@ -74,9 +78,19 @@ eraserWidthElem.addEventListener("change", (e) => {
 })
 
 eraserIcon.addEventListener("click", (e) => {
-    eraserWidth = eraserWidthElem.value;
-    tool.lineWidth = eraserWidth;
-    tool.strokeStyle = eraserColor;
+    if(eraserFlag)
+    {
+        eraserWidth = eraserWidthElem.value;
+        tool.lineWidth = eraserWidth;
+        tool.strokeStyle = eraserColor;
+    }
+    else
+    {
+        penWidth = pencilWidthElem.value;
+        tool.lineWidth = penWidth;
+        tool.strokeStyle = penColor;
+    }
+    
 })
 // tool.beginPath(); // new graphic path line
 // tool.moveTo(10, 10); // start point
